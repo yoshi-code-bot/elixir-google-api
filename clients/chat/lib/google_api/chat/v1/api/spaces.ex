@@ -407,7 +407,7 @@ defmodule GoogleApi.Chat.V1.Api.Spaces do
   end
 
   @doc """
-  Deletes a message. Requires [service account authentication](https://developers.google.com/chat/api/guides/auth/service-accounts).
+  Deletes a message. Requires [service account authentication](https://developers.google.com/chat/api/guides/auth/service-accounts). [Developer Preview](https://developers.google.com/workspace/preview): Deletes a message. Requires [user authentication](https://developers.google.com/chat/api/guides/auth/users) and the `chat.messages` authorization scope.
 
   ## Parameters
 
@@ -467,7 +467,7 @@ defmodule GoogleApi.Chat.V1.Api.Spaces do
   end
 
   @doc """
-  Returns a message. Requires [service account authentication](https://developers.google.com/chat/api/guides/auth/service-accounts).
+  Returns a message. Requires [service account authentication](https://developers.google.com/chat/api/guides/auth/service-accounts). [Developer Preview](https://developers.google.com/workspace/preview): Returns a message. Requires [user authentication](https://developers.google.com/chat/api/guides/auth/users) and the `chat.messages` or `chat.messages.readonly` authorization scope. Messages from a blocked member or messages from a blocked space can also be fetched.
 
   ## Parameters
 

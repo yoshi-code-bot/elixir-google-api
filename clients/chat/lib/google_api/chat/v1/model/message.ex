@@ -35,7 +35,7 @@ defmodule GoogleApi.Chat.V1.Model.Message do
   *   `name` (*type:* `String.t`, *default:* `nil`) - Resource name in the form `spaces/*/messages/*`. Example: `spaces/AAAAAAAAAAA/messages/BBBBBBBBBBB.BBBBBBBBBBB`
   *   `sender` (*type:* `GoogleApi.Chat.V1.Model.User.t`, *default:* `nil`) - Output only. The user who created the message.
   *   `slashCommand` (*type:* `GoogleApi.Chat.V1.Model.SlashCommand.t`, *default:* `nil`) - Output only. Slash command information, if applicable.
-  *   `space` (*type:* `GoogleApi.Chat.V1.Model.Space.t`, *default:* `nil`) - The space the message belongs to.
+  *   `space` (*type:* `GoogleApi.Chat.V1.Model.Space.t`, *default:* `nil`) - The space the message belongs to. When accessed with [user authentication](https://developers.google.com/chat/api/guides/auth/users), only the name of the Space is populated.
   *   `text` (*type:* `String.t`, *default:* `nil`) - Plain-text body of the message. The first link to an image, video, web page, or other preview-able item generates a preview chip.
   *   `thread` (*type:* `GoogleApi.Chat.V1.Model.Thread.t`, *default:* `nil`) - The thread the message belongs to.
   """
